@@ -47,6 +47,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     keyboard_report->mods == (MOD_BIT(KC_LSHIFT) | MOD_BIT(KC_RSHIFT)) \
 )
 
+#define MOUSEKEY_DELAY             150 //200
+#define MOUSEKEY_INTERVAL          60 //50
+#define MOUSEKEY_MAX_SPEED         4 //10
+#define MOUSEKEY_TIME_TO_MAX       7 //20
+#define MOUSEKEY_WHEEL_MAX_SPEED   5	//8
+#define MOUSEKEY_WHEEL_TIME_TO_MAX 40
+
+#define TAPPING_TERM 120 //200 // how long before a tap becomes a hold
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_FORCE_HOLD
+
 /*
  * Feature disable options
  *  These options are also useful to firmware size reduction.
